@@ -79,6 +79,7 @@ namespace ExcelToSQLServer
                 {
                     CommandType = CommandType.StoredProcedure
                 };
+                mergeCommand.ExecuteNonQuery();
             }
         }
 

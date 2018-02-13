@@ -74,13 +74,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="ExcelToSQLServerEntity.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ExcelToSQLServerEntity.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="ExcelToSQLServerEntity.edmx.diagram">
-      <DependentUpon>ExcelToSQLServerEntity.edmx</DependentUpon>
-    </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -95,16 +88,6 @@
       <DependentUpon>SqlServerDataSource.mdf</DependentUpon>
     </Content>
     <Content Include="Default.aspx" />
-    <Content Include="ExcelToSQLServerEntity.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ExcelToSQLServerEntity.Context.cs</LastGenOutput>
-      <DependentUpon>ExcelToSQLServerEntity.edmx</DependentUpon>
-    </Content>
-    <Content Include="ExcelToSQLServerEntity.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ExcelToSQLServerEntity.edmx</DependentUpon>
-      <LastGenOutput>ExcelToSQLServerEntity.cs</LastGenOutput>
-    </Content>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -115,24 +98,6 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ExcelToSQLServerEntity.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ExcelToSQLServerEntity.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ExcelToSQLServerEntity.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ExcelToSQLServerEntity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ExcelToSQLServerEntity.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ExcelToSQLServerEntity.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Excel_Table.cs">
-      <DependentUpon>ExcelToSQLServerEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
