@@ -70,8 +70,8 @@ namespace ExcelToSQLServer
                 }
                 catch (Exception ex)
                 {
-                    resultLabel.Text = ex.ToString();
-                    //resultLabel.Text = "There was a problem writing to the database";
+                    //resultLabel.Text = ex.ToString();
+                    resultLabel.Text = "There was a problem writing to the database";
                 }
 
                 //merge the staging table into the primary Excel_Table
@@ -79,7 +79,6 @@ namespace ExcelToSQLServer
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                mergeCommand.BeginExecuteNonQuery();
             }
         }
 
