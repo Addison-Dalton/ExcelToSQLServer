@@ -75,7 +75,7 @@ namespace ExcelToSQLServer
                 }
 
                 //merge the staging table into the primary Excel_Table
-                SqlCommand mergeCommand = new SqlCommand("MergeTestProc", connection)
+                SqlCommand mergeCommand = new SqlCommand("MergeProc", connection)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
